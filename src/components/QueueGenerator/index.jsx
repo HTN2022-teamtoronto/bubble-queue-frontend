@@ -1,12 +1,13 @@
 import { Tooltip } from "antd";
 import React, { useState } from "react";
 
-const mockData = [0, 1, 2, 3, 4, 5];
-const bubbleSize = 2;
+const mockData = [0, 1, 2, 3, 4, 5,6,7];
+const bubbleSize = 3;
+const ticket = 4;
 
 const ColorBlock = ({ queueMember }) => {
   return (
-    <div class="flex flex-row space-x-4 pr-10">
+    <div class="flex flex-row space-x-4 pr-28">
       <div class="h-48 w-40 rounded-lg bg-[#CB98D4]">
         <div class="flex">
           <div
@@ -27,7 +28,7 @@ const ColorBlock = ({ queueMember }) => {
         </div>
       </div>
 
-      <div class="h-48 w-144 rounded-lg bg-[#9DDBE6]">
+      <div class="h-48 w-96 rounded-lg bg-[#9DDBE6]">
         <div class="flex">
           <div
             class="text-white flex items-center justify-center font-mono"
@@ -48,7 +49,13 @@ const ColorBlock = ({ queueMember }) => {
 
 {
   mockData.map((queueMember,index) => (
-    <div> {index} </div>
+    index > 1 && index < bubbleSize +1 && (
+      <div
+            class="text-white flex items-center justify-center font-mono"
+            style={{ width: "11rem", height: "11rem", fontSize: "5rem" }}
+          >
+           {queueMember} </div>
+    )
   ))
 }
 
@@ -57,21 +64,26 @@ const ColorBlock = ({ queueMember }) => {
       </div>
       <div class="h-48 w-144 rounded-lg bg-[#D66DE5]">
         <div class="flex">
-          <div
+        
+          {
+  mockData.map((queueMember,index) => (
+    index > bubbleSize && (
+      <div
             class="text-white flex items-center justify-center font-mono"
             style={{ width: "11rem", height: "11rem", fontSize: "5rem" }}
           >
-              <Tooltip
-              title="You"
-              color={"#D66DE5"}
-              align={{
-                offset: [0, -30],
-              }}
-              open
-            >
-              8
-            </Tooltip>
-          </div>
+           { queueMember === ticket ? (
+             <Tooltip
+             title="You"
+             color={"#D66DE5"}
+             align={{
+               offset: [0, -30],
+             }}
+             open
+           >{queueMember} </Tooltip>):(queueMember)} </div>
+    )
+  ))
+}
         </div>
       </div>
     </div>
