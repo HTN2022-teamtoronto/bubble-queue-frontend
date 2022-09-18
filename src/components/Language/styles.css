@@ -1,0 +1,4 @@
+.languageContainer{
+    display: flex;
+    flex-direction: row;
+}
