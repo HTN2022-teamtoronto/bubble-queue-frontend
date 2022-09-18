@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const CircleNumber = ({ number, size }) => {
+const CircleNumber = ({ number }) => {
   return (
     <div
       className=" text-white rounded-full bg-[#CB98D4]  flex items-center justify-center font-mono"

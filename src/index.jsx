@@ -22,8 +22,8 @@ root.render(
             <Route path="/userC" element={<UserChoosing />} exact />            
             <Route path="/hostC" element={<HostChoosing />}  />
             <Route path="/host" element={<HostLanding />}  />
-            <Route path="/" element={<HostPin />}  />
-            <Route path="/hostP" element={<UserPin />}  />
+            <Route path="/hostP" element={<HostPin />}  />
+            <Route path="/" element={<UserPin />}  />
             <Route path="/user" element={<UserLanding />}  />
             <Route path="/queue" element={<QueuePage />}  />
             <Route path="/reception" element={<ReceptionessConfirmPage />}  />
