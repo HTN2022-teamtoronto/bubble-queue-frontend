@@ -2,7 +2,7 @@ import React from 'react';
 import Language from "../components/Language";
 import CodeInputForm from '../components/CodeInputForm';
 import "antd/dist/antd.css";
-function UserChoosing(){
+function UserLanding(){
   return (
     <div  >
         <Language />
@@ -13,4 +13,4 @@ function UserChoosing(){
   );
 }
 
-export default UserChoosing;
+export default UserLanding;
