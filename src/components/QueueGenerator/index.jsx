@@ -1,5 +1,5 @@
 import { Tooltip } from "antd";
-import React, { useState } from "react";
+import React from "react";
 
 const mockData = [0, 1, 2, 3, 4, 5,6,7];
 const bubbleSize = 3;

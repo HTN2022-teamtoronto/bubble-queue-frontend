@@ -10,7 +10,7 @@ const HostCodeInputForm = () => {
   return (
     <div className="flex flex-col items-center space-y-10 justify-center pt-20">
       <img className="h-36 w-36" src={HostBubbleLogo} />
-      <p class="text-white text-xl font-raleway">@Host</p>
+      <p className="text-white text-xl font-raleway">@Host</p>
       <div className="text-xl text-white w-2/6">
         <Input
           size="large"
@@ -26,7 +26,9 @@ const HostCodeInputForm = () => {
         />
       </div>
       <Button title={"Create Event"} />
-      <p class="text-white content-end">Copy right © 2022 HTN Team Toronto </p>
+      <p className="text-white content-end">
+        Copy right © 2022 HTN Team Toronto{" "}
+      </p>
     </div>
   );
 };
