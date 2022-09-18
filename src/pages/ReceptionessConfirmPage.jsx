@@ -16,7 +16,6 @@ function ReceptionessConfirmPage(){
           <Button title={"Next"} />
         </div>
         <QueueGenerator />
-
         <p class="flex flex-col text-white justify-center items-center content-end" style={{fontSize:"3rem"}}>Come back check in at 18:26</p>
 
     </div>

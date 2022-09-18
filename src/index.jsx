@@ -16,11 +16,11 @@ root.render(
     <StyledEngineProvider injectFirst>
       <Router className="font-raleway w-full justify-center">
           <Routes>
-            <Route path="/" element={<UserChoosing />} exact />
+            <Route path="/reception" element={<UserChoosing />} exact />
             <Route path="/host" element={<HostLanding />}  />
             <Route path="/what" element={<UserLanding />}  />
             <Route path="/queue" element={<QueuePage />} exact />
-            <Route path="/reception" element={<ReceptionessConfirmPage />}  />
+            <Route path="/" element={<ReceptionessConfirmPage />}  />
           </Routes>
         </Router>
     </StyledEngineProvider>
