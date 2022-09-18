@@ -7,6 +7,7 @@ import './tailwind.css';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import QueuePage from './pages/QueuePage';
+import ReceptionessConfirmPage from './pages/ReceptionessConfirmPage';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +20,7 @@ root.render(
             <Route path="/host" element={<HostLanding />}  />
             <Route path="/what" element={<UserLanding />}  />
             <Route path="/queue" element={<QueuePage />} exact />
+            <Route path="/reception" element={<ReceptionessConfirmPage />}  />
           </Routes>
         </Router>
     </StyledEngineProvider>
