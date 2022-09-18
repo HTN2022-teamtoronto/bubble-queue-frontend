@@ -4,17 +4,20 @@ import { LeftOutlined } from "@ant-design/icons";
 import { Button as AntButton } from "antd";
 import DeskInfo from "../components/DeskInfo";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 function HostPin() {
   const PIN = "123456";
   const deskInfo = [{deskNum:1, waitNum:5}, {deskNum:2, waitNum:12}, {deskNum:3, waitNum:18}];
   return (
     <>
+     <Link
+        to={"/hostC"}>
       <AntButton
         type="text"
         icon={<LeftOutlined style={{ fontSize: "3rem", color: "white" }} />}
         size="large"
         style={{ width: "5rem", height: "5rem" }}
-      ></AntButton>
+      ></AntButton></Link>
       <div className="flex flex-col items-center justify-center">
         <img className="h-24 w-24" src={BubbleLogo} />
         <p

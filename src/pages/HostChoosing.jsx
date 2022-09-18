@@ -4,15 +4,19 @@ import { Button as AntB} from "antd";
 import { LeftOutlined } from "@ant-design/icons";
 import HostSectionCard from '../components/HostSectionCard';
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
+
 function HostChoosing(){
   return (
     <>
+    <Link
+        to={"/host"}>
     <AntB
         type="text"
         icon={<LeftOutlined style={{ fontSize: "3rem", color: "white" }} />}
         size="large"
         style={{ width: "5rem", height: "5rem" }}
-      ></AntB>
+      ></AntB></Link>
     <div className="flex flex-col items-center justify-center" >
         
         <img className="h-24 w-24" src={BubbleLogo} />

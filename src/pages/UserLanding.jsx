@@ -5,11 +5,10 @@ import "antd/dist/antd.css";
 function UserLanding(){
   return (
     <div  >
-        <div className='cursor-pointer'>
-        <Language />
-        </div>
+        <Language id={0}/>
         <div >
           <CodeInputForm />
+          
         </div>
     </div>
   );

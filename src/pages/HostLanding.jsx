@@ -5,7 +5,7 @@ import "antd/dist/antd.css";
 function HostLanding(){
   return (
     <div  >
-        <Language />
+        <Language id={1} />
         <div >
           <HostCodeInputForm />
         </div>

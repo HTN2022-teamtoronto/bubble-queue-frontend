@@ -3,15 +3,17 @@ import DeskCard from '../components/DeskCard';
 import BubbleLogo from "../assets/bubble.png";
 import { Button } from "antd";
 import { LeftOutlined } from "@ant-design/icons";
+import {Link} from "react-router-dom";
 function UserChoosing(){
   return (
     <>
+    <Link to={"/"}>
     <Button
         type="text"
         icon={<LeftOutlined style={{ fontSize: "3rem", color: "white" }} />}
         size="large"
         style={{ width: "5rem", height: "5rem" }}
-      ></Button>
+      ></Button></Link>
     <div className="flex flex-col items-center justify-center" >
         
         <img className="h-24 w-24" src={BubbleLogo} />

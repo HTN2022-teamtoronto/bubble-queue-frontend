@@ -10,14 +10,18 @@ const CodeInputForm = () => {
       <div className="text-xl text-white w-2/6">
         <Input
           size="large"
-          style={{ textAlign: "center", width: "100%", height: "8vh", fontSize: "1.5rem" }}
+          style={{
+            textAlign: "center",
+            width: "100%",
+            height: "8vh",
+            fontSize: "1.5rem",
+          }}
           className="w-full"
           maxLength={6}
           placeholder="Enter your PIN"
         />
       </div>
       <Button title={"Next"} />
-      <p class="text-white content-end">Copy right © 2022 HTN Team Toronto </p>
     </div>
   );
 };

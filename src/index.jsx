@@ -11,9 +11,8 @@ import ReceptionessConfirmPage from './pages/ReceptionessConfirmPage';
 import './tailwind.css';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import {Box} from "@mui/material"
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
@@ -23,12 +22,19 @@ root.render(
             <Route path="/hostC" element={<HostChoosing />}  />
             <Route path="/host" element={<HostLanding />}  />
             <Route path="/hostP" element={<HostPin />}  />
-            <Route path="/" element={<UserPin />}  />
-            <Route path="/user" element={<UserLanding />}  />
+            <Route path="/userP" element={<UserPin/>}  />
+            <Route path="/" element={<UserLanding  />}  />
             <Route path="/queue" element={<QueuePage />}  />
             <Route path="/reception" element={<ReceptionessConfirmPage />}  />
           </Routes>
         </Router>
+         <Box
+      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+    >
+        <p className="text-white content-end">
+        Copy right © 2022 HTN Team Toronto{" "}
+      </p>
+      </Box>
     </StyledEngineProvider>
   </React.StrictMode>
 );
