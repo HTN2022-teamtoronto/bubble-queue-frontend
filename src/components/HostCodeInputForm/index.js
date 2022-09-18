@@ -25,7 +25,7 @@ const HostCodeInputForm = () => {
           placeholder="Number of lines"
         />
       </div>
-      <Button title={"Next"} />
+      <Button title={"Create Event"} />
       <p class="text-white content-end">Copy right © 2022 HTN Team Toronto </p>
     </div>
   );
