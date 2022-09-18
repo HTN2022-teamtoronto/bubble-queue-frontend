@@ -9,7 +9,7 @@ function QueuePage(){
   return (
     <div  >
         <TopBar />
-        <div class="flex flex-row justify-center space-x-20">
+        <div class="flex flex-row justify-center space-x-20 ">
             <p class="text-white" style={{fontSize:"6rem"}}>You are</p>
           <CircleNumber />
           
